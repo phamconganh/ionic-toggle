@@ -7,8 +7,23 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-item>
+    <ion-label>1</ion-label>
+    <ion-toggle [(ngModel)]="var1" (ionChange)="change($event)"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>2</ion-label>
+    <ion-toggle [(ngModel)]="var2" (ionChange)="change($event)"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>3</ion-label>
+    <ion-toggle [(ngModel)]="var3" (ionChange)="change($event)"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>4</ion-label>
+    <ion-toggle [(ngModel)]="var4" (ionChange)="change($event)"></ion-toggle>
+  </ion-item>
 </ion-content>
